@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CARfuel</string>
+    <string name="alcool_ou_gasolina">Alcool ou Gasolina</string>
+    <string name="valor_do_litro_de_alcool">Valor do Litro de Alcool.</string>
+    <string name="valor_do_litro_de_gasolina">Valor do Litro de Gasolina.</string>
+    <string name="calcular">Calcular</string>
+    <string name="m_dia_por_km_percorrido">Média por KM Percorrido</string>
+    <string name="km_rodado">KM Rodado</string>
+    <string name="quantidade_litros_abastecido">Quantidade Litros Abastecido</string>
+    <string name="quantidade_de_litros_abastecidos">Quantidade de Litros Abastecidos</string>
+    <string name="valor_abastecido">Valor Abastecido.</string>
+    <string name="pre_o_do_combust_vel_abastecido">Preço do Combustível Abastecido</string>
 </resources>

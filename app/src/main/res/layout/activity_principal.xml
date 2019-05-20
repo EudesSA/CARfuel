@@ -3,72 +3,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaPrincipal"
     android:background="@drawable/backgroundcarfuel"
-    android:padding="15dp">
+    android:padding="15dp"
+    tools:context=".TelaPrincipal">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Médias de Consumo de Veículo"
-        android:paddingTop="80dp"
-        android:textSize="15sp"
-        android:maxLines="1"
         android:fontFamily="@font/archivo_black"
-        android:textStyle="bold"
+        android:maxLines="1"
+        android:paddingTop="80dp"
+        android:text="Médias de Consumo de Veículo"
         android:textColor="@color/white"
-        />
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
     <Button
-        android:id="@+id/consumo_percurso"
+        android:id="@+id/button_consumo_percurso"
         android:layout_width="150sp"
-        android:layout_height="wrap_content"
+        android:layout_height="150sp"
         android:layout_marginTop="180dp"
-        android:textSize="18sp"
-        android:padding="12dp"
-        android:fontFamily="casual"
         android:background="@drawable/botao_arrendondado"
+        android:fontFamily="casual"
+        android:padding="12dp"
         android:text="Quanto Gasto para Percorrer ?"
-        />
+        android:textSize="18sp" />
+
     <Button
-        android:id="@+id/media_km"
+        android:id="@+id/button_media_km"
         android:layout_width="150sp"
-        android:layout_height="wrap_content"
+        android:layout_height="150sp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="180dp"
-        android:layout_toRightOf="@id/consumo_percurso"
-        android:layout_marginLeft="50dp"
-        android:textSize="18sp"
+        android:layout_toRightOf="@id/button_consumo_percurso"
+        android:background="@drawable/botao_arrendondado"
         android:fontFamily="casual"
         android:padding="12dp"
-        android:background="@drawable/botao_arrendondado"
         android:text="Média KM por Litro ?"
-        />
+        android:textSize="18sp" />
+
     <Button
-        android:id="@+id/gasolinaOUalcool"
+        android:id="@+id/button_gasolinaOUalcool"
         android:layout_width="150sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:textSize="18sp"
-        android:layout_below="@id/consumo_percurso"
-        android:padding="12dp"
-        android:fontFamily="casual"
+        android:layout_height="150sp"
+        android:layout_below="@id/button_consumo_percurso"
+        android:layout_marginTop="30dp"
         android:background="@drawable/botao_arrendondado"
+        android:fontFamily="casual"
+        android:padding="12dp"
         android:text="Alcool ou Gasolina ?"
-        />
+        android:textSize="18sp" />
+
     <Button
-        android:id="@+id/quantidadeLitros"
+        android:id="@+id/button_quantidadeLitros"
         android:layout_width="150sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:textSize="18sp"
-        android:layout_below="@id/media_km"
-        android:layout_toRightOf="@id/gasolinaOUalcool"
-        android:padding="12dp"
-        android:layout_marginLeft="50dp"
-        android:fontFamily="casual"
+        android:layout_height="150sp"
+        android:layout_below="@id/button_media_km"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/button_gasolinaOUalcool"
         android:background="@drawable/botao_arrendondado"
+        android:fontFamily="casual"
+        android:padding="12dp"
         android:text="Quantidade de  Litros Abastecido ?"
-        />
-
-
+        android:textSize="18sp" />
 
 </RelativeLayout>

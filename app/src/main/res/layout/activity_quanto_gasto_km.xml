@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcarfuel"
+    android:padding="15dp"
+    tools:context=".QuantoGastoKm">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:maxLines="1"
+        android:paddingTop="120dp"
+        android:text="Quanto Gasto Para Percorrer ?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Edittext_KM_por_LITRO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/botao_normal"
+        android:fontFamily="casual"
+        android:hint="KM Rodado"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Edittext_KM_PERCORRIDA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/botao_normal"
+        android:fontFamily="casual"
+        android:hint="Quantidade Litros Abastecido"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/Edittext_Valor_COMBUSTIVEL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/botao_normal"
+        android:fontFamily="casual"
+        android:hint="Quantidade Litros Abastecido"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_calc_consumo_percurso"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/botao_arrendondado"
+        android:fontFamily="casual"
+        android:padding="12dp"
+        android:text="Calcular"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
