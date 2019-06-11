@@ -3,6 +3,27 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.carfuel">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permite o acesso à Internet.-->
+
+    <uses-permission android:name="android.permission.ACESS_NETWORK_STATE" />
+    <!--Permite a leitura do estado da rede.-->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--Permite gravar informações no SD card.-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--Permite ler informações no SD card.-->
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--Permite acessar os serviços da Google.-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--Permite acessar o GPS por triangulação de antenas.-->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--Permite acessar o GPS por hardware.-->
+
     <dist:module dist:instant="true" />
 
     <application
