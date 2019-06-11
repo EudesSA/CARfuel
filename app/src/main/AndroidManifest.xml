@@ -34,6 +34,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCKlSZ-focNFLhEZEcSEfahDNuZwHP33IQ"/>
+
+
         <activity android:name=".QuantidadeLitros"></activity>
         <activity android:name=".Alcool_ou_Gasolina" />
         <activity android:name=".MediaKmLitro" />
@@ -45,6 +50,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--Esse meta-data serve para configurar nosso play-services da aplicação-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
     </application>
 
 </manifest>

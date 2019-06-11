@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
 import java.text.DecimalFormat;
 
 public class QuantidadeLitros extends AppCompatActivity implements View.OnClickListener {
@@ -30,7 +32,6 @@ public class QuantidadeLitros extends AppCompatActivity implements View.OnClickL
 
         valorAbastecido = (EditText) findViewById(R.id.Edittext_ValorAbastecido);
         precoCombustivel = (EditText) findViewById(R.id.Edittext_precoCombustivel);
-
     }
 
     public void onClick(View v) {
@@ -49,7 +50,7 @@ public class QuantidadeLitros extends AppCompatActivity implements View.OnClickL
             builder.setPositiveButton("OK", null);
             AlertDialog dialog = builder.create();
             dialog.show();
-        }
+            }
     }
 
     public class ViewHolder {
