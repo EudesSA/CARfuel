@@ -34,6 +34,13 @@ public class Alcool_ou_Gasolina extends AppCompatActivity implements View.OnClic
 
     public void onClick(View view) {
         int id = view.getId();
+        if (valorAlcool.getText().toString().equals(0)){
+            Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
+        }
+        if (valorGasolina.getText().toString().equals(0)){
+            Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
+        }
+
         if (valorAlcool.getText().toString().equals("")){
             Toast.makeText(this,"Insira o valor no Campo Preço do Alcool",Toast.LENGTH_LONG).show();
         }
@@ -48,6 +55,7 @@ public class Alcool_ou_Gasolina extends AppCompatActivity implements View.OnClic
                 float valor_Gasolina = Float.parseFloat(valorGasolina.getText().toString());
                 DecimalFormat formatador = new DecimalFormat("0.00");
                 float resultado = valor_Alcool / valor_Gasolina;
+
                 if (resultado<0.7){
                     AlertDialog.Builder builder = new AlertDialog.Builder(this);
                     builder.setTitle("");
