@@ -46,8 +46,8 @@
 
         <Button
             android:id="@+id/button_calc_consumo_percurso"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/botao_arrendondado"
