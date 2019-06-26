@@ -26,7 +26,7 @@
         android:layout_marginTop="180dp"
         android:background="@drawable/botao_normal"
         android:fontFamily="casual"
-        android:hint="KM Rodado"
+        android:hint="Consumo do Veículo por Litro 'km / Litro'"
         android:inputType="numberDecimal"
         android:padding="12dp"
         android:textSize="18sp" />
@@ -39,7 +39,7 @@
         android:layout_marginTop="260dp"
         android:background="@drawable/botao_normal"
         android:fontFamily="casual"
-        android:hint="Quantidade Litros Abastecido"
+        android:hint="Distância a Percorrer"
         android:inputType="numberDecimal"
         android:padding="12dp"
         android:textSize="18sp" />
@@ -51,7 +51,7 @@
         android:layout_marginTop="340dp"
         android:background="@drawable/botao_normal"
         android:fontFamily="casual"
-        android:hint="Quantidade Litros Abastecido"
+        android:hint="Valor do Litro de Combustível"
         android:inputType="numberDecimal"
         android:padding="12dp"
         android:textSize="18sp" />
@@ -66,6 +66,7 @@
         android:fontFamily="casual"
         android:padding="12dp"
         android:text="Calcular"
+        android:onClick="onClick"
         android:textSize="18sp" />
 
 

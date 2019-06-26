@@ -50,7 +50,7 @@ public class MediaKmLitro extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this,"Insira o valor no Campo Quantidade Litros Abastecido",Toast.LENGTH_LONG).show();
         }
 
-        else if (id == R.id.button_calc_consumo_percurso) {
+        else if (id == R.id.button_calc_Media_percurso) {
             //Logica do Botão
             try {
                 float valor_KM = Float.parseFloat(valorKM.getText().toString());
