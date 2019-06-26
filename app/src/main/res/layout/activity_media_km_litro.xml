@@ -54,6 +54,7 @@
             android:fontFamily="casual"
             android:padding="12dp"
             android:text="@string/calcular"
+            android:onClick="onClick"
             android:textSize="18sp" />
 
 
