@@ -38,23 +38,23 @@ public class QuantoGastoKm extends AppCompatActivity implements View.OnClickList
 
     public void onClick(View vQuantoGastoKm) {
         int id = vQuantoGastoKm.getId();
-            if (valorKmPorLitro.getText().toString().equals(0)){
+            if (valorKmPorLitro.getText().toString().equals("0")){
                 Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
             }
-            if (valorCombustivel.getText().toString().equals(0)){
+            if (valorCombustivel.getText().toString().equals("0")){
                 Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
             }
-            if (distanciaPercorrida.getText().toString().equals(0)){
+            if (distanciaPercorrida.getText().toString().equals("0")){
                 Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
             }
 
-        if (valorKmPorLitro.getText().toString().equals("")){
+        if (valorKmPorLitro.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Consumo do Veículo por Litro 'km / Litro'",Toast.LENGTH_LONG).show();
         }
-        else if  (distanciaPercorrida.getText().toString().equals("")){
+        else if  (distanciaPercorrida.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Distância a Percorrer",Toast.LENGTH_LONG).show();
         }
-        else if (valorCombustivel.getText().toString().equals("")){
+        else if (valorCombustivel.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Valor do Litro de Combustível",Toast.LENGTH_LONG).show();
         }
 
