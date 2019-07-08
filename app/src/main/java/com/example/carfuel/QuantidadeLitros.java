@@ -39,10 +39,10 @@ public class QuantidadeLitros extends AppCompatActivity implements View.OnClickL
 
     public void onClick(View v) {
         int id = v.getId();
-        if (valorAbastecido.getText().toString().equals("")){
+        if (valorAbastecido.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Valor Abastecido",Toast.LENGTH_LONG).show();
         }
-        else if (precoCombustivel.getText().toString().equals("")){
+        else if (precoCombustivel.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Preço do Combustível",Toast.LENGTH_LONG).show();
         }
 

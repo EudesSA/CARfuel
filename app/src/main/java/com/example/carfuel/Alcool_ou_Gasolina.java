@@ -34,17 +34,17 @@ public class Alcool_ou_Gasolina extends AppCompatActivity implements View.OnClic
 
     public void onClick(View view) {
         int id = view.getId();
-        if (valorAlcool.getText().toString().equals(0)){
+        if (valorAlcool.getText().toString().equals("0")){
             Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
         }
-        if (valorGasolina.getText().toString().equals(0)){
+        if (valorGasolina.getText().toString().equals("0")){
             Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
         }
 
-        if (valorAlcool.getText().toString().equals("")){
+        if (valorAlcool.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Preço do Alcool",Toast.LENGTH_LONG).show();
         }
-        else if (valorGasolina.getText().toString().equals("")){
+        else if (valorGasolina.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Preço da Gasolina",Toast.LENGTH_LONG).show();
         }
 

@@ -27,7 +27,7 @@ public class MediaKmLitro extends AppCompatActivity implements View.OnClickListe
         //Define qual icone vai aparecer.
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
-        this.mViewHolder.buttonCalcMediaKmLitros = findViewById(R.id.button_calc_consumo_percurso);
+        this.mViewHolder.buttonCalcMediaKmLitros = findViewById(R.id.button_calc_Media_percurso);
         this.mViewHolder.buttonCalcMediaKmLitros.setOnClickListener(this);
         valorKM = (EditText) findViewById(R.id.Edittext_kmRodado);
         quantidadeCombustivel = (EditText) findViewById(R.id.Edittext_LitrosAbastecido);
@@ -36,17 +36,17 @@ public class MediaKmLitro extends AppCompatActivity implements View.OnClickListe
 
     public void onClick(View vKM) {
         int id = vKM.getId();
-        if (valorKM.getText().toString().equals(0)){
+        if (valorKM.getText().toString().equals("0")){
             Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
         }
-        if (quantidadeCombustivel.getText().toString().equals(0)){
+        if (quantidadeCombustivel.getText().toString().equals("0")){
             Toast.makeText(this,"O valor não pode ser Zero",Toast.LENGTH_LONG).show();
         }
 
-        if (valorKM.getText().toString().equals("")){
+        if (valorKM.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo KM Rodado",Toast.LENGTH_LONG).show();
         }
-        else if (quantidadeCombustivel.getText().toString().equals("")){
+        else if (quantidadeCombustivel.getText().toString().isEmpty()){
             Toast.makeText(this,"Insira o valor no Campo Quantidade Litros Abastecido",Toast.LENGTH_LONG).show();
         }
 
